@@ -1,0 +1,19 @@
+{
+  "name": "amc",
+  "version": "1.0.0",
+  "description": "Alexa Media Controller — CLI for controlling Alexa devices",
+  "type": "commonjs",
+  "bin": {
+    "amc": "./bin/amc.js"
+  },
+  "scripts": {
+    "start": "node bin/amc.js"
+  },
+  "dependencies": {
+    "alexa-remote2": "^5.0.2",
+    "chalk": "^4.1.2",
+    "commander": "^12.1.0",
+    "inquirer": "^8.2.6",
+    "ora": "^5.4.1"
+  }
+}
