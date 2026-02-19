@@ -38,6 +38,7 @@ program
         proxyOnly: true,
         proxyPort: PROXY_PORT,
         proxyListenBind: '0.0.0.0',
+        proxyOwnIp: 'localhost',
       },
       (e) => {
         if (e) return err(`Auth failed: ${e.message || e}`);
