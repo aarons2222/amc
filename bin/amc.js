@@ -40,9 +40,7 @@ program
         proxyListenBind: '0.0.0.0',
         proxyOwnIp: 'localhost',
       },
-      (e) => {
-        if (e) return err(`Auth failed: ${e.message || e}`);
-      }
+      () => {} // proxy mode — ignore init callback, cookie event is what matters
     );
 
     alexa.on('cookie', (cookie, csrf, macDms) => {
